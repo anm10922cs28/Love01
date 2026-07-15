@@ -1,12 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>love you</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love You ❤️</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+html,body{
+  margin:0;
+  height:100%;
+}
+.bg_heart{
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-image:url("https://i.pinimg.com/originals/51/d8/37/51d8374126446d495348b6032202126f.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.container{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:white;
+  font-family:cursive;
+  padding:30px;
+  box-sizing:border-box;
+}
+
+#text1{
+  margin-top:80px;
+  font-size:28px;
+  text-shadow:2px 2px 5px black;
+}
+
+.heart{
+  position:absolute;
+  top:-50%;
+  transform:rotate(-45deg);
+}
+
+.heart:before,
+.heart:after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:inherit;
+  border-radius:50%;
+}
+
+.heart:before{
+  top:-50%;
+  left:0;
+}
+
+.heart:after{
+  top:0;
+  right:-50%;
+}
+
+@keyframes love{
+  0%{
+    top:110%;
+    opacity:1;
+  }
+  100%{
+    top:-10%;
+    opacity:0;
+  }
+}
+</style>
 </head>
+
 <body>
-<div class="bg_heart">
-</div>
+
+<div class="bg_heart"></div>
+
 <div class="container">
 <h2 id="text1"></h2>
-  </div>
+</div>
+
+<script>
+// Paste the ENTIRE JavaScript you posted here
+// (starting from: var love = setInterval(function(){ ... }
+// and ending with the final closing brace.)
+</script>
+
 </body>
 </html>
